@@ -1,0 +1,15 @@
+.wrap{
+    margin:25px auto;
+}
+input{
+  width:100%;
+  height:30px;
+  border: 1px solid;
+  margin:auto;
+}
+label{
+  width:100%;
+  height:30px;
+  margin:auto;
+  color:white;
+}

@@ -1,0 +1,18 @@
+<form *ngIf="formType==='signEmail'">
+  <app-info (inputChanged)="onChange($event)" type="email"></app-info>
+  <app-button (click)="onClickSigninEmail($event)" formType="signinEmail"></app-button>
+  <app-button (click)="onClickSignupEmail($event)" formType="signupEmail"></app-button>
+</form>
+
+<form *ngIf="formType!=='signEmail'">
+  <app-info (inputChanged)="onChange($event)" type="username"></app-info>
+  <app-info (inputChanged)="onChange($event)" type="password"></app-info>
+  <app-info *ngIf="formType==='signup'" (inputChanged)="onChange($event)" type="email"></app-info>
+  <app-button (click)="onClick($event)" [formType]="formType"></app-button>
+  <a *ngIf="formType==='signup'" routerLink="/signin">signin</a>
+  <a *ngIf="formType==='signin'" routerLink="/">signup</a>
+  <a *ngIf="formType==='signin'" routerLink="/signin-with-email">signin with email</a>
+</form>
+
+<p class="message">{{message}}</p>
+

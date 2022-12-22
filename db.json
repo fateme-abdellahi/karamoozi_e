@@ -1,0 +1,18 @@
+{
+  "fullInfo":[{
+    "username":"abc",
+    "password":"11111111",
+    "email":"abcdef@gmail.com"
+  },
+  {
+    "username":"abc",
+    "password":"11111111",
+    "email":"abcddd@gmail.com"
+  }],
+  "justEmail":[{
+    "email":"aaaaaa@gmail.com"
+  },
+  {
+    "email":"bbbbbb@gmail.com"
+  }]
+}
